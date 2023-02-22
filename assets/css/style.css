@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@400;700&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  list-style-type: none !important;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+}
+
+:root {
+  /*--font-family--*/
+  --ff-Cinzel: "Cinzel";
+  --ff-Cinzel: "Poppins";
+  /*--font-size---*/
+  --fs-xsm: 16px;
+  --fs-sm: 18px;
+  --fs-md: 20px;
+  --fs-lg: 40px;
+  --fs-xl: 60px;
+  /*---color-----*/
+  --clr-pink100: #fff6f6;
+  --clr-pink-200: #f8f4f1;
+  --clr-pink300: #eed5d0;
+  --clr-pink500: #e18d8a;
+}
+
+/*--font-family--*/
+.ff_Cinzel {
+  font-family: var(--ff-Cinzel);
+}
+.ff_Poppins {
+  font-family: var(--ff-Poppins);
+}
+/*--font-size---*/
+.fs_xsm {
+  font-size: var(--fs-xsm);
+}
+.fs_sm {
+  font-size: var(--fs-sm);
+}
+.fs_md {
+  font-size: var(--fs-md);
+}
+.fs_lg {
+  font-size: var(--fs-lg);
+}
+.fs_xl {
+  font-size: var(--fs-xl);
+}
+/*-----color----*/
+.bg_pink100 {
+  background-color: var(--clr-pink100) !important;
+}
+.bg_pink200 {
+  background-color: var(--clr-pink-200) !important;
+}
+.bg_pink300 {
+  background-color: var(--clr-pink-300) !important;
+}
+.bg_pink500 {
+  background-color: var(--clr-pink-500) !important;
+}
