@@ -199,6 +199,10 @@ nav ul li a {
   position: relative;
 }
 
+.btn-close {
+  background-color: transparent !important;
+}
+
 nav ul li a::after {
   content: "";
   position: absolute;
