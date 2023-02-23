@@ -354,8 +354,8 @@ input::-webkit-inner-spin-button {
     height: 24%;
   }
   .logo_img {
-    width: 240.44px;
-    height: 170px;
+    width: 150px;
+    height: 100%;
   }
   .card_1 {
     background: #ffffff;
