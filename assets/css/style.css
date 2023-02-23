@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@400;700&display=swap");
+
 * {
   padding: 0%;
   margin: 0%;
@@ -6,13 +7,16 @@
   box-sizing: border-box !important;
   text-decoration: none !important;
 }
+
 /*--font-family--*/
 .ff_Cinzel {
   font-family: "Cinzel", serif;
 }
+
 .ff_Poppins {
   font-family: "Poppins", sans-serif;
 }
+
 :root {
   /*--font-size---*/
   --fs-xsm: 16px;
@@ -32,37 +36,48 @@
 .fs_xsm {
   font-size: var(--fs-xsm);
 }
+
 .fs_sm {
   font-size: var(--fs-sm);
 }
+
 .fs_md {
   font-size: var(--fs-md);
 }
+
 .fs_lg {
   font-size: var(--fs-lg);
 }
+
 .fs_xl {
   font-size: var(--fs-xl);
 }
+
 /*-----color----*/
 .bg_pink100 {
   background-color: var(--clr-pink100) !important;
 }
+
 .bg_pink200 {
   background-color: var(--clr-pink-200) !important;
 }
+
 .bg_pink300 {
   background-color: var(--clr-pink300) !important;
 }
+
 .bg_pink400 {
   background-color: var(--clr-pink400) !important;
 }
+
 .bg_pink500 {
   background-color: var(--clr-pink500) !important;
 }
+
 .opacity_07 {
   opacity: 0.7;
 }
+
 /* ========================= */
 
 /* nav=============== */
@@ -206,37 +221,46 @@ nav ul li a:hover::after {
   display: grid;
   gap: 8px;
 }
+
 .grid_img1 {
   grid-row: 1/2;
   grid-column: 1/2;
 }
+
 .grid_img2 {
   grid-row: 1/3;
   grid-column: 2/3;
 }
+
 .grid_img3 {
   grid-row: 1/3;
   grid-column: 3/4;
 }
+
 .grid_img4 {
   grid-row: 2/3;
   grid-column: 1/2;
 }
+
 .transform_scale:hover {
   transform: scale(1.1);
 }
+
 .transform_scale {
   transition: all 0.2s ease-in-out;
 }
+
 .box_1 {
   background: #f8f4f1;
 }
+
 .card_1 {
   background: #ffffff;
   box-shadow: 10px 10px 28px rgba(219, 219, 219, 0.15);
   border-radius: 4px;
   padding: 45px 35px 25px 35px;
 }
+
 .card_1 input {
   font-family: "Poppins";
   font-weight: 400;
@@ -249,6 +273,7 @@ nav ul li a:hover::after {
   padding: 12px;
   width: 100%;
 }
+
 .card_1 input::placeholder {
   font-family: "Poppins" !important;
   font-weight: 400 !important;
@@ -256,6 +281,7 @@ nav ul li a:hover::after {
   color: #000000 !important;
   opacity: 0.7;
 }
+
 .message_input {
   outline: 0;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -266,6 +292,7 @@ nav ul li a:hover::after {
   color: #000000;
   opacity: 0.7 !important;
 }
+
 .submit_btn {
   background: #e18d8a;
   box-shadow: 0px 4px 36px rgba(225, 141, 138, 0.12);
@@ -274,16 +301,37 @@ nav ul li a:hover::after {
   width: 100%;
   border: none;
 }
+
 .phone_img {
   position: absolute;
   bottom: 0%;
 }
+
+.textArea:focus {
+  outline: none !important;
+}
+
+.textArea {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: var(--fs-xsm);
+  color: #000000;
+  outline: 0;
+  opacity: 0.7 !important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 12px;
+  width: 100%;
+}
+
 .arrow_btn img {
   transition: all 0.2s ease-in-out;
 }
+
 .arrow_btn:hover img {
   transform: translateX(10px);
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -319,9 +367,11 @@ input::-webkit-inner-spin-button {
   transform: translateX(-50%);
   width: 100%;
 }
+
 .quotese_img {
   top: 27%;
 }
+
 .backtoTop {
   bottom: 5%;
   right: 2%;
@@ -335,17 +385,21 @@ input::-webkit-inner-spin-button {
   border: none !important;
   animation: backtoTopBTN 1s ease-in-out infinite alternate-reverse;
 }
+
 .object_fit {
   object-fit: cover;
 }
+
 .position_backToTop {
   bottom: 5%;
   right: 2%;
 }
+
 @keyframes backtoTopBTN {
   from {
     transform: translateY(15px);
   }
+
   to {
     transform: translateY(0px);
   }
@@ -359,41 +413,51 @@ input::-webkit-inner-spin-button {
     --fs-lg: 21px;
     --fs-xl: 38px;
   }
+
   .grid_img1 {
     grid-row: 1/2;
     grid-column: 1/2;
   }
+
   .grid_img2 {
     grid-row: 3/4;
     grid-column: 1/3;
   }
+
   .grid_img3 {
     grid-row: 1/3;
     grid-column: 2/3;
   }
+
   .grid_img4 {
     grid-row: 2/3;
     grid-column: 1/2;
   }
+
   .phone_img {
     position: relative;
     bottom: -48px;
   }
+
   .services_card {
     height: 24%;
   }
+
   .logo_img {
     width: 150px;
     height: 100%;
   }
+
   .card_1 {
     background: #ffffff;
     padding: 45px 24px 25px 24px;
   }
+
   .submit_btn {
     padding: 14px;
   }
 }
+
 @media (min-width: 576px) {
   :root {
     --fs-xsm: 16px;
@@ -402,30 +466,37 @@ input::-webkit-inner-spin-button {
     --fs-lg: 35px;
     --fs-xl: 50px;
   }
+
   .grid_img1 {
     grid-row: 1/2;
     grid-column: 1/2;
   }
+
   .grid_img2 {
     grid-row: 3/4;
     grid-column: 1/3;
   }
+
   .grid_img3 {
     grid-row: 1/3;
     grid-column: 2/3;
   }
+
   .grid_img4 {
     grid-row: 2/3;
     grid-column: 1/2;
   }
+
   .phone_img {
     position: relative;
     bottom: -7%;
   }
+
   .services_card {
     height: 28%;
   }
 }
+
 @media (min-width: 768px) {
   :root {
     --fs-xsm: 15px;
@@ -434,28 +505,35 @@ input::-webkit-inner-spin-button {
     --fs-lg: 40px;
     --fs-xl: 60px;
   }
+
   .grid_img1 {
     grid-row: 1/2;
     grid-column: 1/2;
   }
+
   .grid_img2 {
     grid-row: 3/4;
     grid-column: 1/3;
   }
+
   .grid_img3 {
     grid-row: 1/3;
     grid-column: 2/3;
   }
+
   .grid_img4 {
     grid-row: 2/3;
     grid-column: 1/2;
   }
+
   .phone_img {
     bottom: -48px;
   }
+
   .height_hero_max_lg_img {
     height: 100%;
   }
+
   .services_card {
     height: 28%;
   }
@@ -486,6 +564,7 @@ input::-webkit-inner-spin-button {
     object-fit: cover;
   }
 }
+
 @media (min-width: 992px) {
   :root {
     --fs-xsm: 16px;
@@ -494,30 +573,37 @@ input::-webkit-inner-spin-button {
     --fs-lg: 40px;
     --fs-xl: 60px;
   }
+
   .grid_img1 {
     grid-row: 1/2;
     grid-column: 1/2;
   }
+
   .grid_img2 {
     grid-row: 1/3;
     grid-column: 2/3;
   }
+
   .grid_img3 {
     grid-row: 1/3;
     grid-column: 3/4;
   }
+
   .grid_img4 {
     grid-row: 2/3;
     grid-column: 1/2;
   }
+
   .phone_img {
     position: absolute;
     bottom: 0%;
   }
+
   .services_card {
     height: 20%;
   }
 }
+
 @media (min-width: 1200px) {
   .bg_pink200_xl {
     background-color: var(--clr-pink-200);
@@ -526,10 +612,12 @@ input::-webkit-inner-spin-button {
   .position_xl_absolute {
     position: absolute;
   }
+
   .services_card {
     height: 23%;
   }
 }
+
 @media (min-width: 1400px) {
   .services_card {
     height: 18%;
