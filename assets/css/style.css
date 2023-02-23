@@ -322,6 +322,7 @@ input::-webkit-inner-spin-button {
 .quotese_img {
   top: 27%;
 }
+
 @media (max-width: 576px) {
   :root {
     --fs-xsm: 15px;
@@ -432,7 +433,7 @@ input::-webkit-inner-spin-button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nav_bar {
     position: fixed;
     width: 100%;
