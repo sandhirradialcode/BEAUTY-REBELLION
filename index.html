@@ -4,13 +4,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Beauty Rebellion</title>
+
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/beauty.css" /> -->
+    <!-- link logo -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/webp/logo.webp"
+      type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
-    />
+      referrerpolicy="no-referrer" />
+    <!-- slick theme min css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="overflow_x_hidden" id="bodyTag">
     <header>
@@ -19,9 +35,8 @@
           <div class="w-100">
             <img
               class="logo_img"
-              src="./assets/img/webp/beauty_logo.webp"
-              alt="logo"
-            />
+              src="./assets/img/svg/beauty_logo.svg"
+              alt="beauty_logo" />
           </div>
         </div>
         <div class="bg_pink300 py-2 d-flex justify-content-md-center">
@@ -36,25 +51,42 @@
               ></button>
             </li>
             <li>
-              <a href="" class="ff_Cinzel fw-bold fs_sm text-white">HOme</a>
+              <a
+                href=""
+                class="ff_Cinzel fw-bold fs_sm text-white"
+                onclick="closeNav()"
+                >HOme</a
+              >
             </li>
             <li>
-              <a href="#Services" class="ff_Cinzel fw-bold fs_sm text-white"
+              <a
+                href="#Services"
+                class="ff_Cinzel fw-bold fs_sm text-white"
+                onclick="closeNav()"
                 >Services</a
               >
             </li>
             <li>
-              <a href="#Testimonials" class="ff_Cinzel fw-bold fs_sm text-white"
+              <a
+                href="#Testimonials"
+                class="ff_Cinzel fw-bold fs_sm text-white"
+                onclick="closeNav()"
                 >Testimonials</a
               >
             </li>
             <li>
-              <a href="" class="ff_Cinzel fw-bold fs_sm text-white"
+              <a
+                href=""
+                class="ff_Cinzel fw-bold fs_sm text-white"
+                onclick="closeNav()"
                 >Pricelist</a
               >
             </li>
             <li>
-              <a href="#Gallery" class="ff_Cinzel fw-bold fs_sm text-white"
+              <a
+                href="#Gallery"
+                class="ff_Cinzel fw-bold fs_sm text-white"
+                onclick="closeNav()"
                 >Gallery</a
               >
             </li>
@@ -117,13 +149,21 @@
       </section>
     </header>
     <!-----------------------------------------SERVICES--------------------------------->
-    <section class="mt-5 pt-3 overflow-hidden" id="Services">
+    <section class="mt-5 overflow-hidden" id="Services">
       <div class="container">
-        <h2 class="text-center fw-normal ff_Cinzel fs_lg mb-5">
+        <h2
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-offset="200"
+          class="text-center fw-normal ff_Cinzel fs_lg mb-5">
           SERVICES FOR THE BEST CLIENTS
         </h2>
         <div class="row mb-5 slider_3">
-          <div class="col-6 col-xl-3 px-2">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-offset="200"
+            class="col-6 col-xl-3 px-2">
             <p
               class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2"
             >
@@ -145,7 +185,11 @@
               />
             </div>
           </div>
-          <div class="col-6 col-xl-3 px-2">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="200"
+            class="col-6 col-xl-3 px-2">
             <p
               class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2"
             >
@@ -166,7 +210,11 @@
               />
             </div>
           </div>
-          <div class="col-6 col-xl-3 px-2">
+          <div
+            data-aos="fade-down"
+            data-aos-duration="800"
+            data-aos-offset="200"
+            class="col-6 col-xl-3 px-2">
             <p
               class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2"
             >
@@ -188,7 +236,11 @@
               />
             </div>
           </div>
-          <div class="col-6 col-xl-3 px-2">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-offset="200"
+            class="col-6 col-xl-3 px-2">
             <p
               class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2"
             >
@@ -214,19 +266,26 @@
       </div>
     </section>
     <!----------------------------------------- natural ------------------------------->
-    <section class="my-4">
+    <section class="my-4 overflow-hidden">
       <div class="container">
         <div
-          class="row px-3 px-xl-0 justify-content-xl-between bg_pink200_xl align-items-center flex-column flex-xl-row"
-        >
-          <div class="col-md-9 col-xl-5 p-0 bg_pink200">
+          class="row px-3 px-xl-0 justify-content-xl-between bg_pink200_xl align-items-center flex-column flex-xl-row">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-offset="200"
+            class="col-md-9 col-xl-5 p-0 bg_pink200">
             <img
               class="w-100"
               src="./assets/img/webp/natural_skincare_eye.webp"
               alt="eye"
             />
           </div>
-          <div class="col-md-9 col-xl-6 p-3 bg_pink200">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-offset="200"
+            class="col-md-9 col-xl-6 p-3 bg_pink200">
             <h2 class="fs_lg fw-normal ff_Cinzel mb-3">
               Natural And certified organic skincare
             </h2>
@@ -258,9 +317,12 @@
         >
           <div class="col-12 mx-3">
             <div
-              class="row justify-content-between pe-0 align-items-center flex-column-reverse flex-xl-row"
-            >
-              <div class="col-md-9 col-xl-6 p-4 bg_pink200 position-relative">
+              class="row justify-content-between pe-0 align-items-center flex-column-reverse flex-xl-row">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-offset="200"
+                class="col-md-9 col-xl-6 p-4 bg_pink200 position-relative">
                 <h2 class="fs_lg fw-normal ff_Cinzel">our happy clients</h2>
                 <div class="col-10">
                   <img
@@ -276,7 +338,11 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-9 col-xl-4 p-0 bg_pink200">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-offset="200"
+                class="col-md-9 col-xl-4 p-0 bg_pink200">
                 <img
                   class="w-100"
                   src="./assets/img/webp/our_happy_clients.webp"
@@ -287,9 +353,12 @@
           </div>
           <div class="col-12 mx-3">
             <div
-              class="row justify-content-between pe-0 align-items-center flex-column-reverse flex-xl-row"
-            >
-              <div class="col-md-9 col-xl-6 p-4 bg_pink200 position-relative">
+              class="row justify-content-between pe-0 align-items-center flex-column-reverse flex-xl-row">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="800"
+                data-aos-offset="200"
+                class="col-md-9 col-xl-6 p-4 bg_pink200 position-relative">
                 <h2 class="fs_lg fw-normal ff_Cinzel">our happy clients</h2>
                 <div class="col-10">
                   <img
@@ -305,7 +374,11 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-9 col-xl-4 p-0 bg_pink200">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="800"
+                data-aos-offset="200"
+                class="col-md-9 col-xl-4 p-0 bg_pink200">
                 <img
                   class="w-100"
                   src="./assets/img/webp/our_happy_clients.webp"
@@ -319,8 +392,10 @@
           class="position_xl_absolute d-flex align-items-center justify-content-center mt-4 mt-xl-0 z_index_2 position_arrow_slider"
         >
           <div
-            class="bg-white rounded-circle padding_arrow arrow_slider left_arrow_slider"
-          >
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            class="bg-white rounded-circle padding_arrow arrow_slider left_arrow_slider">
             <svg
               width="29"
               height="16"
@@ -335,8 +410,10 @@
             </svg>
           </div>
           <div
-            class="bg-white rounded-circle padding_arrow ms-3 arrow_slider right_arrow_slider"
-          >
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-offset="200"
+            class="bg-white rounded-circle padding_arrow ms-3 arrow_slider right_arrow_slider">
             <svg
               class="transform_rotate"
               width="29"
@@ -357,32 +434,56 @@
     <!-- -------------------------------------our-gallery------------------------------->
     <section id="Gallery">
       <div class="container py-4">
-        <h2 class="ff_Cinzel fw-normal fs_lg text-black text-center pb-4">
+        <h2
+          data-aos="fade-down"
+          data-aos-duration="800"
+          data-aos-offset="200"
+          class="ff_Cinzel fw-normal fs_lg text-black text-center pb-4">
           our gallery
         </h2>
         <div class="row justify-content-center">
           <div class="col-11">
             <div class="d_grid">
-              <img
-                class="w-100 grid_img1"
-                src="./assets/img/png/our_gallery_img1.png"
-                alt="our_gallery_img1"
-              />
-              <img
-                class="w-100 h-100 grid_img2"
-                src="./assets/img/png/our_gallery_img3.png"
-                alt="our_gallery_img3"
-              />
-              <img
-                class="w-100 h-100 grid_img3"
-                src="./assets/img/png/our_gallery_img4.png"
-                alt="our_gallery_img4"
-              />
-              <img
-                class="w-100 grid_img4"
-                src="./assets/img/png/our_gallery_img2.png"
-                alt="our_gallery_img2"
-              />
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-offset="200"
+                class="grid_img1 overflow-hidden">
+                <img
+                  class="w-100 transform_scale"
+                  src="./assets/img/webp/our_gallery_img1.webp"
+                  alt="our_gallery_img1" />
+              </div>
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-offset="200"
+                class="grid_img2 overflow-hidden">
+                <img
+                  class="w-100 h-100 transform_scale object_fit"
+                  src="./assets/img/webp/our_gallery_img3.webp"
+                  alt="our_gallery_img3" />
+              </div>
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-offset="200"
+                class="grid_img3 overflow-hidden">
+                <img
+                  class="w-100 h-100 transform_scale"
+                  src="./assets/img/webp/our_gallery_img4.webp"
+                  alt="our_gallery_img4" />
+              </div>
+              <div
+                data-aos="zoom-in"
+                data-aos-duration="800"
+                data-aos-offset="200"
+                class="grid_img4 overflow-hidden">
+                <img
+                  class="w-100 h-100 transform_scale"
+                  src="./assets/img/webp/our_gallery_img2.webp"
+                  alt="our_gallery_img2" />
+              </div>
             </div>
           </div>
         </div>
@@ -393,14 +494,22 @@
       <div class="container py-4">
         <div class="box_1">
           <div class="row align-items-md-center justify-content-md-between">
-            <div class="col-12 col-md-6 col-lg-5">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-offset="200"
+              class="col-12 col-md-6 col-lg-5">
               <img
                 class="w-100"
                 src="./assets/img/png/before_img.png"
                 alt="before_img"
               />
             </div>
-            <div class="col-12 col-md-6">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-offset="200"
+              class="col-12 col-md-6">
               <div class="my-4 pe-md-3 px-3 px-sm-5 px-md-0">
                 <h2
                   class="ff_Cinzel fw-normal fs_lg text-black m-0 text-center text-md-start"
@@ -429,11 +538,16 @@
     </section>
     <!-------------------------------------------After----------------------------------->
     <section>
-      <div class="container py-4">
+      <div class="container pt-4 pb-5">
         <div class="box_1">
-          <div class="row align-items-md-center justify-content-md-between">
-            <div class="col-12 col-md-6">
-              <div class="my-4 pe-md-3 px-3 px-sm-5 px-md-0 ps-lg-5">
+          <div
+            class="row align-items-md-center flex-column-reverse flex-md-row justify-content-md-between">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-offset="200"
+              class="col-12 col-md-6">
+              <div class="my-4 px-3 pe-md-0 ps-xl-5">
                 <h2
                   class="ff_Cinzel fw-normal fs_lg text-black m-0 text-center text-md-start"
                 >
@@ -455,7 +569,11 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-5">
+            <div
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-offset="200"
+              class="col-12 col-md-6 col-lg-5">
               <img
                 class="w-100"
                 src="./assets/img/png/after_img.png"
@@ -469,19 +587,29 @@
     <!--------------------------------------Get-In-Touch-------------------------------->
     <section class="bg_pink500 position-relative">
       <div class="container py-5">
-        <div class="row justify-content-between">
+        <div class="row justify-content-center justify-content-lg-between">
           <div class="col-12 col-md-10 col-lg-6 col-xl-5">
-            <h2 class="ff_Cinzel fw-normal fs_lg text-white m-0">
+            <h2
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-offset="200"
+              class="ff_Cinzel fw-normal fs_lg text-white m-0">
               Get In Touch
             </h2>
-            <p class="ff_Poppins fw-normal fs_xsm text-white m-0 pt-1">
+            <p
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-offset="200"
+              class="ff_Poppins fw-normal fs_xsm text-white m-0 pt-1">
               Our friendly team would love to hear from you!
             </p>
             <div class="card_1 mt-4">
               <form action="/action_page.php">
                 <div
-                  class="d-flex flex-column flex-sm-row justify-content-between gap-4"
-                >
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-offset="200"
+                  class="d-flex flex-column flex-sm-row justify-content-between gap-4">
                   <div>
                     <h6
                       class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07"
@@ -499,7 +627,11 @@
                     <input type="text" name="Lname" placeholder="Last name" />
                   </div>
                 </div>
-                <div class="pt-4">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-offset="200"
+                  class="pt-4">
                   <h6
                     class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07"
                   >
@@ -511,7 +643,11 @@
                     placeholder="You@gmail.com"
                   />
                 </div>
-                <div class="pt-4">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-offset="200"
+                  class="pt-4">
                   <h6
                     class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07"
                   >
@@ -523,7 +659,11 @@
                     placeholder="+1(656) 000-0000"
                   />
                 </div>
-                <div class="pt-4">
+                <div
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-offset="200"
+                  class="pt-4">
                   <h6
                     class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07"
                   >
@@ -532,6 +672,9 @@
                   <input class="message_input" type="text" name="Message" />
                 </div>
                 <button
+                  data-aos="zoom-in"
+                  data-aos-duration="800"
+                  data-aos-offset="200"
                   type="submit"
                   class="submit_btn arrow_btn ff_Poppins fw-normal fs_md text-white mt-4 mt-md-5"
                 >
@@ -556,10 +699,10 @@
       </div>
     </section>
     <!-----------------------------------------Footer------------------------------------>
-    <footer class="position-relative">
+    <footer class="position-relative overflow-hidden">
       <div class="container py-4">
-        <div class="row justify-content-center my-5">
-          <div class="col-7 col-md-8 col-xl-4">
+        <div class="row justify-content-center py-5">
+          <div class="col-7 col-md-8 col-lg-5 col-xl-4">
             <img
               class="w-100"
               src="./assets/img/svg/beauty_logo.svg"
@@ -611,9 +754,30 @@
       </div>
       <span class="light_pink"></span>
     </footer>
+    <button
+      class="position-fixed backtoTop bg_pink500"
+      id="back-to-up"
+      onClick="scrollToTop()">
+      <img
+        class="w-100"
+        src="./assets/img/webp/backtopTop.webp"
+        alt="backtopTop" />
+      <!-- &uarr; -->
+    </button>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+
+    <!-- j query min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
@@ -699,6 +863,11 @@
         Nav.classList.remove("show_nav");
         overflowHidden.classList.remove("overflow_y_hidden");
       }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
