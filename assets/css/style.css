@@ -320,6 +320,13 @@ input::-webkit-inner-spin-button {
   width: 100%;
 }
 @media (max-width: 576px) {
+  :root {
+    --fs-xsm: 12px;
+    --fs-sm: 18px;
+    --fs-md: 18px;
+    --fs-lg: 21px;
+    --fs-xl: 38px;
+  }
   .grid_img1 {
     grid-row: 1/2;
     grid-column: 1/2;
@@ -342,6 +349,13 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (min-width: 576px) {
+  :root {
+    --fs-xsm: 16px;
+    --fs-sm: 18px;
+    --fs-md: 20px;
+    --fs-lg: 35px;
+    --fs-xl: 50px;
+  }
   .grid_img1 {
     grid-row: 1/2;
     grid-column: 1/2;
@@ -361,6 +375,9 @@ input::-webkit-inner-spin-button {
   .phone_img {
     position: relative;
     bottom: -7%;
+  }
+  .services_card {
+    height: 28%;
   }
 }
 @media (min-width: 768px) {
