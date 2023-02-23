@@ -330,6 +330,9 @@ input::-webkit-inner-spin-button {
   border-radius: 100%;
   border: none !important;
 }
+.border_radius100 {
+  border-radius: 100%;
+}
 .position_backToTop {
   bottom: 5%;
   right: 2%;
