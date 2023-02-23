@@ -321,7 +321,7 @@ input::-webkit-inner-spin-button {
 }
 @media (max-width: 576px) {
   :root {
-    --fs-xsm: 12px;
+    --fs-xsm: 15px;
     --fs-sm: 18px;
     --fs-md: 18px;
     --fs-lg: 21px;
@@ -346,6 +346,9 @@ input::-webkit-inner-spin-button {
   .phone_img {
     position: relative;
     bottom: -48px;
+  }
+  .services_card {
+    height: 30%;
   }
 }
 @media (min-width: 576px) {
