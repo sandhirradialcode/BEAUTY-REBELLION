@@ -109,7 +109,14 @@
   opacity: 0.7;
 }
 .message_input {
-  height: 115px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: var(--fs-xsm);
+  color: #000000;
+  opacity: 0.7 !important;
 }
 .submit_btn {
   background: #e18d8a;
@@ -122,6 +129,35 @@
 .phone_img {
   position: absolute;
   bottom: 0%;
+}
+.light_pink {
+  background-color: #f0d9d4;
+  width: 100%;
+  height: 42px;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer_line {
+  position: relative;
+  display: inline;
+}
+
+.footer_line::before {
+  content: "";
+  background-color: #000000;
+  height: 3px;
+  width: 0px;
+  left: 50%;
+  bottom: -15%;
+  border-radius: 15px;
+  transition: all 200ms linear;
+  position: absolute;
+}
+
+.footer_line:hover::before {
+  transform: translateX(-50%);
+  width: 100%;
 }
 @media (max-width: 576px) {
   .grid_img1 {
