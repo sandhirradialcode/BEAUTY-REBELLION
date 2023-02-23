@@ -325,11 +325,22 @@ input::-webkit-inner-spin-button {
 .backtoTop {
   bottom: 5%;
   right: 2%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 50px;
   height: 50px;
   border-radius: 100%;
   border: none !important;
   animation: backtoTopBTN 1s ease-in-out infinite alternate-reverse;
+}
+.object_fit {
+  object-fit: cover;
+}
+.position_backToTop {
+  bottom: 5%;
+  right: 2%;
 }
 @keyframes backtoTopBTN {
   from {
@@ -338,13 +349,6 @@ input::-webkit-inner-spin-button {
   to {
     transform: translateY(0px);
   }
-}
-.border_radius100 {
-  border-radius: 100%;
-}
-.position_backToTop {
-  bottom: 5%;
-  right: 2%;
 }
 
 @media (max-width: 576px) {
