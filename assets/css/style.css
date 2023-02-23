@@ -353,6 +353,17 @@ input::-webkit-inner-spin-button {
   .services_card {
     height: 24%;
   }
+  .logo_img {
+    width: 240.44px;
+    height: 170px;
+  }
+  .card_1 {
+    background: #ffffff;
+    padding: 45px 24px 25px 24px;
+  }
+  .submit_btn {
+    padding: 14px;
+  }
 }
 @media (min-width: 576px) {
   :root {
