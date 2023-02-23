@@ -24,7 +24,7 @@
             />
           </div>
         </div>
-        <div class="bg_pink300 py-3 d-flex justify-content-md-center">
+        <div class="bg_pink300 py-2 d-flex justify-content-md-center">
           <ul
             id="navBar"
             class="d-flex mb-0 flex-column flex-md-row justify-content-center gap-4 bg_pink300 align-items-center gap-md-5 list-unstyled nav_bar"
@@ -252,7 +252,7 @@
     </section>
     <!--------------------------------------- happy client -------------------------->
     <section id="Testimonials" class="mb-5">
-      <div class="container position-relative p-xl-0">
+      <div class="container position-relative p-0">
         <div
           class="row m-0 bg_pink200_xl w-100 justify-content-end p-0 slider_2"
         >
@@ -356,41 +356,33 @@
     </section>
     <!-- -------------------------------------our-gallery------------------------------->
     <section id="Gallery">
-      <div class="container py-4 py-xl-5">
+      <div class="container py-4">
         <h2 class="ff_Cinzel fw-normal fs_lg text-black text-center pb-4">
           our gallery
         </h2>
         <div class="row justify-content-center">
-          <div class="col-11 p-0">
+          <div class="col-11">
             <div class="d_grid">
-              <div class="grid_img1 overflow-hidden">
-                <img
-                  class="w-100 transform_scale"
-                  src="./assets/img/webp/our_gallery_img1.webp"
-                  alt="our_gallery_img1"
-                />
-              </div>
-              <div class="grid_img2 overflow-hidden">
-                <img
-                  class="w-100 h-100 transform_scale object_fit"
-                  src="./assets/img/webp/our_gallery_img3.webp"
-                  alt="our_gallery_img3"
-                />
-              </div>
-              <div class="grid_img3 overflow-hidden">
-                <img
-                  class="w-100 h-100 transform_scale"
-                  src="./assets/img/webp/our_gallery_img4.webp"
-                  alt="our_gallery_img4"
-                />
-              </div>
-              <div class="grid_img4 overflow-hidden">
-                <img
-                  class="w-100 transform_scale"
-                  src="./assets/img/webp/our_gallery_img2.webp"
-                  alt="our_gallery_img2"
-                />
-              </div>
+              <img
+                class="w-100 grid_img1"
+                src="./assets/img/png/our_gallery_img1.png"
+                alt="our_gallery_img1"
+              />
+              <img
+                class="w-100 h-100 grid_img2"
+                src="./assets/img/png/our_gallery_img3.png"
+                alt="our_gallery_img3"
+              />
+              <img
+                class="w-100 h-100 grid_img3"
+                src="./assets/img/png/our_gallery_img4.png"
+                alt="our_gallery_img4"
+              />
+              <img
+                class="w-100 grid_img4"
+                src="./assets/img/png/our_gallery_img2.png"
+                alt="our_gallery_img2"
+              />
             </div>
           </div>
         </div>
@@ -398,7 +390,7 @@
     </section>
     <!------------------------------------------Before----------------------------------->
     <section>
-      <div class="container pt-4 pb-4">
+      <div class="container py-4">
         <div class="box_1">
           <div class="row align-items-md-center justify-content-md-between">
             <div class="col-12 col-md-6 col-lg-5">
@@ -437,7 +429,7 @@
     </section>
     <!-------------------------------------------After----------------------------------->
     <section>
-      <div class="container py-5">
+      <div class="container py-4">
         <div class="box_1">
           <div class="row align-items-md-center justify-content-md-between">
             <div class="col-12 col-md-6">
@@ -486,7 +478,7 @@
               Our friendly team would love to hear from you!
             </p>
             <div class="card_1 mt-4">
-              <form>
+              <form action="/action_page.php">
                 <div
                   class="d-flex flex-column flex-sm-row justify-content-between gap-4"
                 >
@@ -567,7 +559,7 @@
     <footer class="position-relative">
       <div class="container py-4">
         <div class="row justify-content-center my-5">
-          <div class="col-7 col-md-8 col-lg-5 col-xl-4">
+          <div class="col-7 col-md-8 col-xl-4">
             <img
               class="w-100"
               src="./assets/img/svg/beauty_logo.svg"
@@ -622,15 +614,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"></script>
-    <!-- j query min js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
@@ -657,7 +640,6 @@
           slidesToShow: 1,
           slidesToScroll: 1,
           autoplay: true,
-          fade: true,
           autoplaySpeed: 3500,
           prevArrow: $(".left_arrow_slider"),
           nextArrow: $(".right_arrow_slider"),
@@ -716,22 +698,6 @@
       function closeNav() {
         Nav.classList.remove("show_nav");
         overflowHidden.classList.remove("overflow_y_hidden");
-      }
-      window.onscroll = () => {
-        toggleTopButton();
-      };
-      function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-      function toggleTopButton() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          document.getElementById("back-to-up").classList.remove("d-none");
-        } else {
-          document.getElementById("back-to-up").classList.add("d-none");
-        }
       }
     </script>
   </body>
