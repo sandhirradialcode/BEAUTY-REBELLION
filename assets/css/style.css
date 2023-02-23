@@ -319,6 +319,9 @@ input::-webkit-inner-spin-button {
   transform: translateX(-50%);
   width: 100%;
 }
+.quotese_img {
+  top: 27%;
+}
 @media (max-width: 576px) {
   :root {
     --fs-xsm: 15px;
