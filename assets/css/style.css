@@ -464,6 +464,9 @@ input::-webkit-inner-spin-button {
     position: absolute;
     bottom: 0%;
   }
+  .services_card {
+    height: 20%;
+  }
 }
 @media (min-width: 1200px) {
   .bg_pink200_xl {
@@ -475,5 +478,10 @@ input::-webkit-inner-spin-button {
   }
   .services_card {
     height: 23%;
+  }
+}
+@media (min-width: 1400px) {
+  .services_card {
+    height: 18%;
   }
 }
