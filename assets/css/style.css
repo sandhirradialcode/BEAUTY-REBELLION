@@ -319,9 +319,12 @@ input::-webkit-inner-spin-button {
   transform: translateX(-50%);
   width: 100%;
 }
+.quotese_img {
+  top: 27%;
+}
 @media (max-width: 576px) {
   :root {
-    --fs-xsm: 12px;
+    --fs-xsm: 15px;
     --fs-sm: 18px;
     --fs-md: 18px;
     --fs-lg: 21px;
@@ -346,6 +349,20 @@ input::-webkit-inner-spin-button {
   .phone_img {
     position: relative;
     bottom: -48px;
+  }
+  .services_card {
+    height: 24%;
+  }
+  .logo_img {
+    width: 150px;
+    height: 100%;
+  }
+  .card_1 {
+    background: #ffffff;
+    padding: 45px 24px 25px 24px;
+  }
+  .submit_btn {
+    padding: 14px;
   }
 }
 @media (min-width: 576px) {
@@ -461,6 +478,9 @@ input::-webkit-inner-spin-button {
     position: absolute;
     bottom: 0%;
   }
+  .services_card {
+    height: 20%;
+  }
 }
 @media (min-width: 1200px) {
   .bg_pink200_xl {
@@ -472,5 +492,10 @@ input::-webkit-inner-spin-button {
   }
   .services_card {
     height: 23%;
+  }
+}
+@media (min-width: 1400px) {
+  .services_card {
+    height: 18%;
   }
 }
