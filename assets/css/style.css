@@ -329,6 +329,15 @@ input::-webkit-inner-spin-button {
   height: 50px;
   border-radius: 100%;
   border: none !important;
+  animation: backtoTopBTN 1s ease-in-out infinite alternate-reverse;
+}
+@keyframes backtoTopBTN {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 .border_radius100 {
   border-radius: 100%;
