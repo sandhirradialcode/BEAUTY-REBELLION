@@ -348,7 +348,7 @@ input::-webkit-inner-spin-button {
     bottom: -48px;
   }
   .services_card {
-    height: 30%;
+    height: 24%;
   }
 }
 @media (min-width: 576px) {
