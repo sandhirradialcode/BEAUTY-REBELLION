@@ -112,7 +112,7 @@
   background-image: url("../img/png/paint.png");
   background-position: left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .bg_white {
@@ -132,7 +132,7 @@
 }
 
 .position_arrow_slider {
-  bottom: 10%;
+  bottom: 5%;
   left: 3%;
 }
 
@@ -222,6 +222,12 @@ nav ul li a:hover::after {
   grid-row: 2/3;
   grid-column: 1/2;
 }
+.transform_scale:hover {
+  transform: scale(1.1);
+}
+.transform_scale {
+  transition: all 0.2s ease-in-out;
+}
 .box_1 {
   background: #f8f4f1;
 }
@@ -271,6 +277,12 @@ nav ul li a:hover::after {
 .phone_img {
   position: absolute;
   bottom: 0%;
+}
+.submit_btn img {
+  transition: all 0.2s ease-in-out;
+}
+.submit_btn:hover img {
+  transform: translateX(10px);
 }
 .light_pink {
   background-color: #f0d9d4;
@@ -346,6 +358,13 @@ nav ul li a:hover::after {
   }
 }
 @media (min-width: 768px) {
+  :root {
+    --fs-xsm: 15px;
+    --fs-sm: 18px;
+    --fs-md: 20px;
+    --fs-lg: 40px;
+    --fs-xl: 60px;
+  }
   .grid_img1 {
     grid-row: 1/2;
     grid-column: 1/2;
