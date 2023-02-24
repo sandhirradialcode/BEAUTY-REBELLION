@@ -220,6 +220,14 @@ nav ul li a:hover::after {
   transform: translateX(-50%);
 }
 
+.transform_translate_box {
+  transition: 0.3s ease-in-out all;
+}
+
+.transform_translate:hover .transform_translate_box {
+  transform: translateY(-10px);
+}
+
 /* =========================== */
 .d_grid {
   display: grid;
