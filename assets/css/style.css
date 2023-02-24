@@ -221,7 +221,7 @@ nav ul li a:hover::after {
 }
 
 .transform_translate_img img {
-  transition: 0.3s ease-in-out all;
+  transition: 0.2s ease-in-out all;
 }
 
 .transform_translate_img:hover img {
