@@ -220,8 +220,21 @@ nav ul li a:hover::after {
   transform: translateX(-50%);
 }
 
+.transform_translate_img img {
+  transition: 0.3s ease-in-out all;
+}
+
+.transform_translate_img:hover img {
+  transform: translateX(-10px);
+}
+
 .transform_translate_box {
   transition: 0.3s ease-in-out all;
+}
+
+.width_natural_img {
+  width: 45px;
+  height: 45px;
 }
 
 .transform_translate:hover .transform_translate_box {
