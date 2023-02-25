@@ -1,848 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Beauty Rebellion</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- ----------------------- -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- slick theme min css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <!-- link css -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- link logo -->
-    <link
-      rel="shortcut icon"
-      href="./assets/img/webp/logo.webp"
-      type="image/x-icon"
-    />
-  </head>
-  <body class="overflow-hidden" id="bodyTag">
-    <div
-      class="preloader d-flex position-fixed min-vh-100 align-items-center justify-content-center w-100"
-    >
-      <div class="preloaderImg">
-        <img class="w-100" src="./assets/img/png/beauty_logo.png" alt="" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beauty Rebellion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <!-- ----------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- slick theme min css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- link css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- link logo -->
+  <link rel="shortcut icon" href="./assets/img/webp/logo.webp" type="image/x-icon" />
+</head>
+
+<body class="overflow-hidden" id="bodyTag">
+  <div class="preloader d-flex position-fixed min-vh-100 align-items-center justify-content-center w-100">
+    <div class="preloaderImg">
+      <img class="w-100" src="./assets/img/webp/beauty_logo.webp" alt="logo" />
+    </div>
+  </div>
+  <header>
+    <nav class="bg_pink100 pb-2">
+      <div class="text-center pb-4 pt-3">
+        <div class="w-100">
+          <img class="logo_img" src="./assets/img/svg/beauty_logo.svg" alt="beauty_logo" />
+        </div>
+      </div>
+      <div class="bg_pink300 py-3 d-flex justify-content-md-center">
+        <ul id="navBar"
+          class="d-flex mb-0 flex-column flex-md-row justify-content-center gap-4 bg_pink300 align-items-center gap-md-5 list-unstyled nav_bar">
+          <li class="d-md-none position-absolute position_close_btn">
+            <button class="btn btn-close btn-close-white bg-transparent fs-1 opacity-100 p-4"
+              onclick="closeNav()"></button>
+          </li>
+          <li>
+            <a href="" class="ff_Cinzel fw-bold fs_sm text-white" onclick="closeNav()">HOme</a>
+          </li>
+          <li>
+            <a href="#Services" class="ff_Cinzel fw-bold fs_sm text-white" onclick="closeNav()">Services</a>
+          </li>
+          <li>
+            <a href="#Testimonials" class="ff_Cinzel fw-bold fs_sm text-white" onclick="closeNav()">Testimonials</a>
+          </li>
+          <li>
+            <a href="" class="ff_Cinzel fw-bold fs_sm text-white" onclick="closeNav()">Pricelist</a>
+          </li>
+          <li>
+            <a href="#Gallery" class="ff_Cinzel fw-bold fs_sm text-white" onclick="closeNav()">Gallery</a>
+          </li>
+        </ul>
+        <div onclick="showNav()" id="menu_btn"
+          class="d-flex flex-column nav_icon align-items-center nav_button_toggle c_pointer d-inline-block position-relative d-md-none ms-3">
+          <span class="nav_bar_btn"></span>
+          <span class="nav_bar_btn my-2"></span>
+          <span class="nav_bar_btn"></span>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="overflow-hidden bg_pink400 position-relative">
+        <div class="position-absolute position_hero_title z_index_2">
+          <div class="col-xl-8 d-flex align-items-start flex-column">
+            <h1 class="ff_Cinzel fw-bold fs_xl text-white mb-3">
+              Glow is the Essence of beauty
+            </h1>
+            <a class="align-items-center arrow_btn bg_pink500 d-flex justify-content-start ff_Poppins fw-normal fs_md rounded-pill px-4 py-3 text-white"
+              href="">
+              <img class="me-3" src="./assets/img/svg/ArrowBookAppointment.svg" alt="" />
+              Book appointments
+            </a>
+          </div>
+        </div>
+        <div class="slider">
+          <div>
+            <img class="height_hero_max_md_img height_hero_md_img mx-auto" src="./assets/img/webp/threeGirls.webp"
+              alt="threeGirls" />
+          </div>
+          <div>
+            <img class="height_hero_max_md_img height_hero_md_img mx-auto" src="./assets/img/webp/threeGirls.webp"
+              alt="threeGirls" />
+          </div>
+          <div>
+            <img class="height_hero_max_md_img height_hero_md_img mx-auto" src="./assets/img/webp/threeGirls.webp"
+              alt="threeGirls" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-----------------------------------------SERVICES--------------------------------->
+  <section class="mt-5 overflow-hidden" id="Services">
+    <div class="container">
+      <h2 class="text-center fw-normal ff_Cinzel fs_lg mb-5">
+        SERVICES FOR THE BEST CLIENTS
+      </h2>
+      <div class="row mb-5 slider_3">
+        <div class="col-6 col-xl-3 px-2 transform_translate">
+          <p class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2">
+            Body Wax
+          </p>
+          <div class="position-relative transform_translate_box transition_box">
+            <div class="position-absolute services_card bottom-0 w-100">
+              <div class="w-100 h-100 bg_cards p-2">
+                <p class="ff_Poppins fw-normal fs_xsm mb-0">
+                  Nunc sem tempus amet id amet vitae rhoncus sollic itudin
+                  quis.
+                </p>
+              </div>
+            </div>
+            <img class="w-100" src="./assets/img/webp/body_wax.webp" alt="body_wax" />
+          </div>
+        </div>
+        <div class="col-6 col-xl-3 px-2 transform_translate">
+          <p class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2">
+            Lash lift
+          </p>
+          <div class="position-relative transform_translate_box transition_box">
+            <div class="position-absolute services_card bottom-0 w-100">
+              <div class="w-100 h-100 bg_cards p-2">
+                <p class="ff_Poppins fw-normal fs_xsm mb-0">
+                  Bibendum nisi suspendisse ipsum feugiat nulla mollis.
+                </p>
+              </div>
+            </div>
+            <img class="w-100" src="./assets/img/webp/lesh_lift.webp" alt="lesh_lift" />
+          </div>
+        </div>
+        <div class="col-6 col-xl-3 px-2 transform_translate">
+          <p class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2">
+            Colour eyelash
+          </p>
+          <div class="position-relative transform_translate_box transition_box">
+            <div class="position-absolute services_card bottom-0 w-100">
+              <div class="w-100 h-100 bg_cards p-2">
+                <p class="ff_Poppins fw-normal fs_xsm mb-0">
+                  Sed amet ultrices varius lorem nulla ac varius laoreet eget.
+                  Vitae ed.
+                </p>
+              </div>
+            </div>
+            <img class="w-100" src="./assets/img/webp/colour_eyelash.webp" alt="colour_eyelash" />
+          </div>
+        </div>
+        <div class="col-6 col-xl-3 px-2 transform_translate">
+          <p class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2">
+            eyelash extensions
+          </p>
+          <div class="position-relative transform_translate_box transition_box">
+            <div class="position-absolute services_card bottom-0 w-100">
+              <div class="w-100 h-100 bg_cards p-2">
+                <p class="ff_Poppins fw-normal fs_xsm mb-0">
+                  Nunc sem tempus amet id amet vitae rhoncus sollic itudin
+                  quis.
+                </p>
+              </div>
+            </div>
+            <img class="w-100" src="./assets/img/webp/eyelash_extensions.webp" alt="eyelash_extensions" />
+          </div>
+        </div>
       </div>
     </div>
-    <header>
-      <nav class="bg_pink100 pb-2">
-        <div class="text-center pb-4 pt-3">
-          <div class="w-100">
-            <img
-              class="logo_img"
-              src="./assets/img/svg/beauty_logo.svg"
-              alt="beauty_logo"
-            />
+  </section>
+  <!----------------------------------------- natural ------------------------------->
+  <section class="my-4 overflow-hidden">
+    <div class="container">
+      <div
+        class="row px-lg-3 px-xl-0 justify-content-xl-between bg_pink200_xl align-items-center flex-column flex-xl-row">
+        <div data-aos="fade-right" data-aos-duration="800" data-aos-offset="200"
+          class="col-md-9 col-xl-5 p-0 bg_pink200">
+          <img class="w-100" src="./assets/img/webp/natural_skincare_eye.webp" alt="eye" />
+        </div>
+        <div class="col-md-9 col-xl-6 p-3 bg_pink200">
+          <h2 class="fs_lg fw-normal ff_Cinzel mb-3">
+            Natural And certified organic skincare
+          </h2>
+          <p class="fs_xsm ff_Poppins fw-normal">
+            Vel felis netus tempus risus. Erat sed pharetra condimentum est
+            fusce sed eget pulvinar nibh.
+          </p>
+          <div class="d-flex align-items-center">
+            <img class="width_natural_img" src="./assets/img/svg/price.svg" alt="price" />
+            <p class="ff_Cinzel fw-normal fs_sm mb-0">Affordable Price</p>
+          </div>
+          <div class="d-flex align-items-center my-2">
+            <img class="width_natural_img" src="./assets/img/svg/work.svg" alt="work" />
+            <p class="ff_Cinzel fw-normal fs_sm mb-0">Professional work</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <img class="width_natural_img" src="./assets/img/svg/tools.svg" alt="tools" />
+            <p class="ff_Cinzel fw-normal fs_sm mb-0">modern tools</p>
           </div>
         </div>
-        <div class="bg_pink300 py-3 d-flex justify-content-md-center">
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------- happy client -------------------------->
+  <section id="Testimonials" class="mb-5">
+    <div class="container position-relative p-0">
+      <div class="row m-0 bg_pink200_xl w-100 justify-content-end p-0 slider_2">
+        <div class="col-12 mx-3">
+          <div class="row justify-content-between pe-0 align-items-center flex-column-reverse flex-xl-row">
+            <div class="col-md-9 col-xl-6 p-4 bg_pink200 position-relative">
+              <h2 class="fs_lg fw-normal ff_Cinzel">our happy clients</h2>
+              <div class="col-10">
+                <img class="position-absolute quotese_img" src="./assets/img/svg/Quotes.svg" alt="Quotes" />
+                <p class="ff_Poppins fs_xsm fw-normal">
+                  Proin risus sit molestie arcu ultrices. Volutpat lectus
+                  scelerisque pellentesque a nunc et massa. At malesuada
+                  egestas lacus lorem mauris at consequat ut. Mauris ut odio
+                  erat massa odio cursus dolor sed turpis.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9 col-xl-5 p-0 bg_pink200">
+              <img class="w-100" src="./assets/img/webp/our_happy_clients.webp" alt="our_happy_clients" />
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mx-3">
+          <div class="row justify-content-between pe-0 align-items-center flex-column-reverse flex-xl-row">
+            <div class="col-md-9 col-xl-6 p-4 bg_pink200 position-relative">
+              <h2 class="fs_lg fw-normal ff_Cinzel">our happy clients</h2>
+              <div class="col-10">
+                <img class="position-absolute quotese_img" src="./assets/img/svg/Quotes.svg" alt="Quotes" />
+                <p class="ff_Poppins fs_xsm fw-normal">
+                  Proin risus sit molestie arcu ultrices. Volutpat lectus
+                  scelerisque pellentesque a nunc et massa. At malesuada
+                  egestas lacus lorem mauris at consequat ut. Mauris ut odio
+                  erat massa odio cursus dolor sed turpis.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9 col-xl-5 p-0 bg_pink200">
+              <img class="w-100" src="./assets/img/webp/our_happy_clients.webp" alt="our_happy_clients" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="position_xl_absolute d-flex align-items-center justify-content-center mt-4 mt-xl-0 z_index_2 position_arrow_slider">
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200"
+          class="bg-white rounded-circle padding_arrow arrow_slider left_arrow_slider">
+          <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM29 9L1 9L1 7L29 7L29 9Z"
+              fill="#202020" />
+          </svg>
+        </div>
+        <div class="bg-white rounded-circle padding_arrow ms-3 arrow_slider right_arrow_slider">
+          <svg class="transform_rotate" width="29" height="16" viewBox="0 0 29 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM29 9L1 9L1 7L29 7L29 9Z"
+              fill="#202020" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------------------our-gallery------------------------------->
+  <section id="Gallery">
+    <div class="container py-4">
+      <h2 class="ff_Cinzel fw-normal fs_lg text-black text-center pb-4">
+        our gallery
+      </h2>
+      <div class="row justify-content-center">
+        <div class="col-11 px-0">
+          <div class="d_grid">
+            <div class="grid_img1 overflow-hidden">
+              <img class="w-100 transform_scale transform_scale_transition"
+                src="./assets/img/webp/our_gallery_img1.webp" alt="our_gallery_img1" />
+            </div>
+            <div class="grid_img2 overflow-hidden">
+              <img class="w-100 h-100 transform_scale transform_scale_transition object_fit"
+                src="./assets/img/webp/our_gallery_img3.webp" alt="our_gallery_img3" />
+            </div>
+            <div class="grid_img3 overflow-hidden">
+              <img class="w-100 h-100 transform_scale transform_scale_transition"
+                src="./assets/img/webp/our_gallery_img4.webp" alt="our_gallery_img4" />
+            </div>
+            <div class="grid_img4 overflow-hidden">
+              <img class="w-100 h-100 transform_scale transform_scale_transition"
+                src="./assets/img/webp/our_gallery_img2.webp" alt="our_gallery_img2" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------------------------------Before----------------------------------->
+  <section>
+    <div class="container py-4">
+      <div class="bg_pink200">
+        <div class="row align-items-md-center justify-content-md-between">
+          <div class="col-12 col-md-6 col-lg-5">
+            <img class="w-100" src="./assets/img/webp/before_img.webp" alt="before_img" />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="my-4 pe-md-3 px-3 px-sm-5 px-md-0">
+              <h2 class="ff_Cinzel fw-normal fs_lg text-black m-0 text-center text-md-start">
+                Before
+              </h2>
+              <p class="ff_Poppins fw-normal fs_xsm text-black opacity_07 pt-2 pe-lg-5 m-0 text-center text-md-start">
+                Blandit vitae iaculis vivamus ipsum. Phasellus vitae cursus
+                sapien orci arcu proin eget netus. Viverra tristique nec
+                volutpat sit nunc posuere diam amet. Consequat nulla tempor
+                lectus diam. Nec sed pellentesque mi ipsum vitae mus augue.
+                Velit ut id posuere faucibus donec aliquam magna.
+              </p>
+              <p class="ff_Poppins fw-normal fs_xsm text-black opacity_07 m-0 text-center text-md-start">
+                Diam viverra eu turpis nibh facilisi porta sodales ut risus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-------------------------------------------After----------------------------------->
+  <section>
+    <div class="container pt-4 pb-5">
+      <div class="bg_pink200">
+        <div class="row align-items-md-center flex-column-reverse flex-md-row justify-content-md-between">
+          <div class="col-12 col-md-6">
+            <div class="my-4 px-3 pe-md-0 ps-xl-5">
+              <h2 class="ff_Cinzel fw-normal fs_lg text-black m-0 text-center text-md-start">
+                After
+              </h2>
+              <p class="ff_Poppins fw-normal fs_xsm text-black opacity_07 pt-2 m-0 text-center text-md-start">
+                Blandit vitae iaculis vivamus ipsum. Phasellus vitae cursus
+                sapien orci arcu proin eget netus. Viverra tristique nec
+                volutpat sit nunc posuere diam amet. Consequat nulla tempor
+                lectus diam. Nec sed pellentesque mi ipsum vitae mus augue.
+                Velit ut id posuere faucibus donec aliquam magna.
+              </p>
+              <p class="ff_Poppins fw-normal fs_xsm text-black opacity_07 m-0 text-center text-md-start">
+                Diam viverra eu turpis nibh facilisi porta sodales ut risus.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5">
+            <img class="w-100" src="./assets/img/webp/after_img.webp" alt="after_img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------------Get-In-Touch-------------------------------->
+  <section class="bg_pink500 position-relative">
+    <div class="container py-5">
+      <div class="row justify-content-center justify-content-lg-between">
+        <div class="col-12 col-md-10 col-lg-6 col-xl-5">
+          <h2 class="ff_Cinzel fw-normal fs_lg text-white m-0">
+            Get In Touch
+          </h2>
+          <p class="ff_Poppins fw-normal fs_xsm text-white m-0 pt-1">
+            Our friendly team would love to hear from you!
+          </p>
+          <div class="form_bg mt-4">
+            <form>
+              <div class="d-flex flex-column flex-sm-row justify-content-between gap-4">
+                <div>
+                  <h6 class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07">
+                    First name
+                  </h6>
+                  <input autocomplete="off" type="text" name="Fname" placeholder="First name" />
+                </div>
+                <div>
+                  <h6 class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07">
+                    Last name
+                  </h6>
+                  <input autocomplete="off" type="text" name="Lname" placeholder="Last name" />
+                </div>
+              </div>
+              <div class="pt-4">
+                <h6 class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07">
+                  Email
+                </h6>
+                <input autocomplete="off" type="email" name="Email" placeholder="You@gmail.com" />
+              </div>
+              <div class="pt-4">
+                <h6 class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07">
+                  Phone number
+                </h6>
+                <input autocomplete="off" type="number" class="w-100" placeholder="+1(656) 000-0000" name="name" />
+              </div>
+              <div class="pt-4">
+                <h6 class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07">
+                  Message
+                </h6>
+                <textarea class="w-100 textArea p-2" rows="6"></textarea>
+              </div>
+              <button type="submit" class="submit_btn arrow_btn ff_Poppins fw-normal fs_md text-white mt-4 mt-md-5">
+                <span class="pe-2"><img class="img_transition" src="./assets/img/svg/btn_arrow.svg"
+                    alt="btn_arrow" /></span>
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 col-lg-6">
+          <div class="phone_img">
+            <img class="w-100" src="./assets/img/webp/phone_img.webp" alt="phone_img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------------------------------------Footer------------------------------------>
+  <footer class="position-relative overflow-hidden">
+    <div class="container py-4">
+      <div class="row justify-content-center py-5">
+        <div class="col-7 col-md-8 col-lg-5 col-xl-4">
+          <img class="w-100" src="./assets/img/svg/beauty_logo.svg" alt="beauty_logo" />
+        </div>
+        <div class="col-10 mt-5">
           <ul
-            id="navBar"
-            class="d-flex mb-0 flex-column flex-md-row justify-content-center gap-4 bg_pink300 align-items-center gap-md-5 list-unstyled nav_bar"
-          >
-            <li class="d-md-none position-absolute position_close_btn">
-              <button
-                class="btn btn-close btn-close-white bg-transparent fs-1 opacity-100 p-4"
-                onclick="closeNav()"
-              ></button>
+            class="ps-0 d-flex gap-3 gap-sm-4 gap-md-5 flex-column flex-sm-row align-items-center justify-content-center">
+            <li>
+              <a href="#"
+                class="ff_Cinzel fw-normal fs_xsm text-black d-inline-block footer_line position-relative d-inline-block">HOme</a>
             </li>
             <li>
-              <a
-                href=""
-                class="ff_Cinzel fw-bold fs_sm text-white"
-                onclick="closeNav()"
-                >HOme</a
-              >
+              <a href="#Services"
+                class="ff_Cinzel fw-normal fs_xsm text-black d-inline-block footer_line position-relative d-inline-block">Services</a>
             </li>
             <li>
-              <a
-                href="#Services"
-                class="ff_Cinzel fw-bold fs_sm text-white"
-                onclick="closeNav()"
-                >Services</a
-              >
+              <a href="#Testimonials"
+                class="ff_Cinzel fw-normal fs_xsm text-black d-inline-block footer_line position-relative d-inline-block">Testimonials</a>
             </li>
             <li>
-              <a
-                href="#Testimonials"
-                class="ff_Cinzel fw-bold fs_sm text-white"
-                onclick="closeNav()"
-                >Testimonials</a
-              >
+              <a href="#"
+                class="ff_Cinzel fw-normal fs_xsm text-black d-inline-block footer_line position-relative d-inline-block">Pricelist</a>
             </li>
             <li>
-              <a
-                href=""
-                class="ff_Cinzel fw-bold fs_sm text-white"
-                onclick="closeNav()"
-                >Pricelist</a
-              >
-            </li>
-            <li>
-              <a
-                href="#Gallery"
-                class="ff_Cinzel fw-bold fs_sm text-white"
-                onclick="closeNav()"
-                >Gallery</a
-              >
+              <a href="#Gallery"
+                class="ff_Cinzel fw-normal fs_xsm text-black d-inline-block footer_line position-relative d-inline-block">Gallery</a>
             </li>
           </ul>
-          <div
-            onclick="showNav()"
-            id="menu_btn"
-            class="d-flex flex-column nav_icon align-items-center nav_button_toggle c_pointer d-inline-block position-relative d-md-none ms-3"
-          >
-            <span class="nav_bar_btn"></span>
-            <span class="nav_bar_btn my-2"></span>
-            <span class="nav_bar_btn"></span>
-          </div>
-        </div>
-      </nav>
-      <section>
-        <div class="overflow-hidden bg_pink400 position-relative">
-          <div class="position-absolute position_hero_title z_index_2">
-            <div class="col-xl-8 d-flex align-items-start flex-column">
-              <h1 class="ff_Cinzel fw-bold fs_xl text-white mb-3">
-                Glow is the Essence of beauty
-              </h1>
-              <a
-                class="align-items-center arrow_btn bg_pink500 d-flex justify-content-start ff_Poppins fw-normal fs_md rounded-pill px-4 py-3 text-white"
-                href=""
-              >
-                <img
-                  class="me-3"
-                  src="./assets/img/svg/ArrowBookAppointment.svg"
-                  alt=""
-                />
-                Book appointments
-              </a>
-            </div>
-          </div>
-          <div class="slider">
-            <div>
-              <img
-                class="height_hero_max_md_img height_hero_md_img mx-auto"
-                src="./assets/img/webp/threeGirls.webp"
-                alt="threeGirls"
-              />
-            </div>
-            <div>
-              <img
-                class="height_hero_max_md_img height_hero_md_img mx-auto"
-                src="./assets/img/webp/threeGirls.webp"
-                alt="threeGirls"
-              />
-            </div>
-            <div>
-              <img
-                class="height_hero_max_md_img height_hero_md_img mx-auto"
-                src="./assets/img/webp/threeGirls.webp"
-                alt="threeGirls"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
-    <!-----------------------------------------SERVICES--------------------------------->
-    <section class="mt-5 overflow-hidden" id="Services">
-      <div class="container">
-        <h2 class="text-center fw-normal ff_Cinzel fs_lg mb-5">
-          SERVICES FOR THE BEST CLIENTS
-        </h2>
-        <div class="row mb-5 slider_3">
-          <div class="col-6 col-xl-3 px-2 transform_translate">
-            <p
-              class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2"
-            >
-              Body Wax
-            </p>
-            <div
-              class="position-relative transform_translate_box transition_box"
-            >
-              <div class="position-absolute services_card bottom-0 w-100">
-                <div class="w-100 h-100 bg_cards p-2">
-                  <p class="ff_Poppins fw-normal fs_xsm mb-0">
-                    Nunc sem tempus amet id amet vitae rhoncus sollic itudin
-                    quis.
-                  </p>
-                </div>
-              </div>
-              <img
-                class="w-100"
-                src="./assets/img/webp/body_wax.webp"
-                alt="body_wax"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-xl-3 px-2 transform_translate">
-            <p
-              class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2"
-            >
-              Lash lift
-            </p>
-            <div
-              class="position-relative transform_translate_box transition_box"
-            >
-              <div class="position-absolute services_card bottom-0 w-100">
-                <div class="w-100 h-100 bg_cards p-2">
-                  <p class="ff_Poppins fw-normal fs_xsm mb-0">
-                    Bibendum nisi suspendisse ipsum feugiat nulla mollis.
-                  </p>
-                </div>
-              </div>
-              <img
-                class="w-100"
-                src="./assets/img/webp/lesh_lift.webp"
-                alt="lesh_lift"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-xl-3 px-2 transform_translate">
-            <p
-              class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2"
-            >
-              Colour eyelash
-            </p>
-            <div
-              class="position-relative transform_translate_box transition_box"
-            >
-              <div class="position-absolute services_card bottom-0 w-100">
-                <div class="w-100 h-100 bg_cards p-2">
-                  <p class="ff_Poppins fw-normal fs_xsm mb-0">
-                    Sed amet ultrices varius lorem nulla ac varius laoreet eget.
-                    Vitae ed.
-                  </p>
-                </div>
-              </div>
-              <img
-                class="w-100"
-                src="./assets/img/webp/colour_eyelash.webp"
-                alt="colour_eyelash"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-xl-3 px-2 transform_translate">
-            <p
-              class="ff_Cinzel fw-normal fs_md bg_paint d-inline-block px-4 py-2"
-            >
-              eyelash extensions
-            </p>
-            <div
-              class="position-relative transform_translate_box transition_box"
-            >
-              <div class="position-absolute services_card bottom-0 w-100">
-                <div class="w-100 h-100 bg_cards p-2">
-                  <p class="ff_Poppins fw-normal fs_xsm mb-0">
-                    Nunc sem tempus amet id amet vitae rhoncus sollic itudin
-                    quis.
-                  </p>
-                </div>
-              </div>
-              <img
-                class="w-100"
-                src="./assets/img/webp/eyelash_extensions.webp"
-                alt="eyelash_extensions"
-              />
-            </div>
-          </div>
         </div>
       </div>
-    </section>
-    <!----------------------------------------- natural ------------------------------->
-    <section class="my-4 overflow-hidden">
-      <div class="container">
-        <div
-          class="row px-lg-3 px-xl-0 justify-content-xl-between bg_pink200_xl align-items-center flex-column flex-xl-row"
-        >
-          <div
-            data-aos="fade-right"
-            data-aos-duration="800"
-            data-aos-offset="200"
-            class="col-md-9 col-xl-5 p-0 bg_pink200"
-          >
-            <img
-              class="w-100"
-              src="./assets/img/webp/natural_skincare_eye.webp"
-              alt="eye"
-            />
-          </div>
-          <div class="col-md-9 col-xl-6 p-3 bg_pink200">
-            <h2 class="fs_lg fw-normal ff_Cinzel mb-3">
-              Natural And certified organic skincare
-            </h2>
-            <p class="fs_xsm ff_Poppins fw-normal">
-              Vel felis netus tempus risus. Erat sed pharetra condimentum est
-              fusce sed eget pulvinar nibh.
-            </p>
-            <div class="d-flex align-items-center">
-              <img
-                class="width_natural_img"
-                src="./assets/img/svg/price.svg"
-                alt="price"
-              />
-              <p class="ff_Cinzel fw-normal fs_sm mb-0">Affordable Price</p>
-            </div>
-            <div class="d-flex align-items-center my-2">
-              <img
-                class="width_natural_img"
-                src="./assets/img/svg/work.svg"
-                alt="work"
-              />
-              <p class="ff_Cinzel fw-normal fs_sm mb-0">Professional work</p>
-            </div>
-            <div class="d-flex align-items-center">
-              <img
-                class="width_natural_img"
-                src="./assets/img/svg/tools.svg"
-                alt="tools"
-              />
-              <p class="ff_Cinzel fw-normal fs_sm mb-0">modern tools</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--------------------------------------- happy client -------------------------->
-    <section id="Testimonials" class="mb-5">
-      <div class="container position-relative p-0">
-        <div
-          class="row m-0 bg_pink200_xl w-100 justify-content-end p-0 slider_2"
-        >
-          <div class="col-12 mx-3">
-            <div
-              class="row justify-content-between pe-0 align-items-center flex-column-reverse flex-xl-row"
-            >
-              <div class="col-md-9 col-xl-6 p-4 bg_pink200 position-relative">
-                <h2 class="fs_lg fw-normal ff_Cinzel">our happy clients</h2>
-                <div class="col-10">
-                  <img
-                    class="position-absolute quotese_img"
-                    src="./assets/img/svg/Quotes.svg"
-                    alt="Quotes"
-                  />
-                  <p class="ff_Poppins fs_xsm fw-normal">
-                    Proin risus sit molestie arcu ultrices. Volutpat lectus
-                    scelerisque pellentesque a nunc et massa. At malesuada
-                    egestas lacus lorem mauris at consequat ut. Mauris ut odio
-                    erat massa odio cursus dolor sed turpis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-9 col-xl-5 p-0 bg_pink200">
-                <img
-                  class="w-100"
-                  src="./assets/img/webp/our_happy_clients.webp"
-                  alt="our_happy_clients"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="col-12 mx-3">
-            <div
-              class="row justify-content-between pe-0 align-items-center flex-column-reverse flex-xl-row"
-            >
-              <div class="col-md-9 col-xl-6 p-4 bg_pink200 position-relative">
-                <h2 class="fs_lg fw-normal ff_Cinzel">our happy clients</h2>
-                <div class="col-10">
-                  <img
-                    class="position-absolute quotese_img"
-                    src="./assets/img/svg/Quotes.svg"
-                    alt="Quotes"
-                  />
-                  <p class="ff_Poppins fs_xsm fw-normal">
-                    Proin risus sit molestie arcu ultrices. Volutpat lectus
-                    scelerisque pellentesque a nunc et massa. At malesuada
-                    egestas lacus lorem mauris at consequat ut. Mauris ut odio
-                    erat massa odio cursus dolor sed turpis.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-9 col-xl-5 p-0 bg_pink200">
-                <img
-                  class="w-100"
-                  src="./assets/img/webp/our_happy_clients.webp"
-                  alt="our_happy_clients"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="position_xl_absolute d-flex align-items-center justify-content-center mt-4 mt-xl-0 z_index_2 position_arrow_slider"
-        >
-          <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-offset="200"
-            class="bg-white rounded-circle padding_arrow arrow_slider left_arrow_slider"
-          >
-            <svg
-              width="29"
-              height="16"
-              viewBox="0 0 29 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM29 9L1 9L1 7L29 7L29 9Z"
-                fill="#202020"
-              />
-            </svg>
-          </div>
-          <div
-            class="bg-white rounded-circle padding_arrow ms-3 arrow_slider right_arrow_slider"
-          >
-            <svg
-              class="transform_rotate"
-              width="29"
-              height="16"
-              viewBox="0 0 29 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.292892 8.7071C-0.0976315 8.31658 -0.0976314 7.68341 0.292893 7.29289L6.65686 0.92893C7.04738 0.538406 7.68054 0.538406 8.07107 0.92893C8.46159 1.31945 8.46159 1.95262 8.07107 2.34314L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM29 9L1 9L1 7L29 7L29 9Z"
-                fill="#202020"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- -------------------------------------our-gallery------------------------------->
-    <section id="Gallery">
-      <div class="container py-4">
-        <h2 class="ff_Cinzel fw-normal fs_lg text-black text-center pb-4">
-          our gallery
-        </h2>
-        <div class="row justify-content-center">
-          <div class="col-11 px-0">
-            <div class="d_grid">
-              <div class="grid_img1 overflow-hidden">
-                <img
-                  class="w-100 transform_scale transform_scale_transition"
-                  src="./assets/img/webp/our_gallery_img1.webp"
-                  alt="our_gallery_img1"
-                />
-              </div>
-              <div class="grid_img2 overflow-hidden">
-                <img
-                  class="w-100 h-100 transform_scale transform_scale_transition object_fit"
-                  src="./assets/img/webp/our_gallery_img3.webp"
-                  alt="our_gallery_img3"
-                />
-              </div>
-              <div class="grid_img3 overflow-hidden">
-                <img
-                  class="w-100 h-100 transform_scale transform_scale_transition"
-                  src="./assets/img/webp/our_gallery_img4.webp"
-                  alt="our_gallery_img4"
-                />
-              </div>
-              <div class="grid_img4 overflow-hidden">
-                <img
-                  class="w-100 h-100 transform_scale transform_scale_transition"
-                  src="./assets/img/webp/our_gallery_img2.webp"
-                  alt="our_gallery_img2"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!------------------------------------------Before----------------------------------->
-    <section>
-      <div class="container py-4">
-        <div class="bg_pink200">
-          <div class="row align-items-md-center justify-content-md-between">
-            <div class="col-12 col-md-6 col-lg-5">
-              <img
-                class="w-100"
-                src="./assets/img/png/before_img.png"
-                alt="before_img"
-              />
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="my-4 pe-md-3 px-3 px-sm-5 px-md-0">
-                <h2
-                  class="ff_Cinzel fw-normal fs_lg text-black m-0 text-center text-md-start"
-                >
-                  Before
-                </h2>
-                <p
-                  class="ff_Poppins fw-normal fs_xsm text-black opacity_07 pt-2 pe-lg-5 m-0 text-center text-md-start"
-                >
-                  Blandit vitae iaculis vivamus ipsum. Phasellus vitae cursus
-                  sapien orci arcu proin eget netus. Viverra tristique nec
-                  volutpat sit nunc posuere diam amet. Consequat nulla tempor
-                  lectus diam. Nec sed pellentesque mi ipsum vitae mus augue.
-                  Velit ut id posuere faucibus donec aliquam magna.
-                </p>
-                <p
-                  class="ff_Poppins fw-normal fs_xsm text-black opacity_07 m-0 text-center text-md-start"
-                >
-                  Diam viverra eu turpis nibh facilisi porta sodales ut risus.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-------------------------------------------After----------------------------------->
-    <section>
-      <div class="container pt-4 pb-5">
-        <div class="bg_pink200">
-          <div
-            class="row align-items-md-center flex-column-reverse flex-md-row justify-content-md-between"
-          >
-            <div class="col-12 col-md-6">
-              <div class="my-4 px-3 pe-md-0 ps-xl-5">
-                <h2
-                  class="ff_Cinzel fw-normal fs_lg text-black m-0 text-center text-md-start"
-                >
-                  After
-                </h2>
-                <p
-                  class="ff_Poppins fw-normal fs_xsm text-black opacity_07 pt-2 m-0 text-center text-md-start"
-                >
-                  Blandit vitae iaculis vivamus ipsum. Phasellus vitae cursus
-                  sapien orci arcu proin eget netus. Viverra tristique nec
-                  volutpat sit nunc posuere diam amet. Consequat nulla tempor
-                  lectus diam. Nec sed pellentesque mi ipsum vitae mus augue.
-                  Velit ut id posuere faucibus donec aliquam magna.
-                </p>
-                <p
-                  class="ff_Poppins fw-normal fs_xsm text-black opacity_07 m-0 text-center text-md-start"
-                >
-                  Diam viverra eu turpis nibh facilisi porta sodales ut risus.
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-5">
-              <img
-                class="w-100"
-                src="./assets/img/png/after_img.png"
-                alt="after_img"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--------------------------------------Get-In-Touch-------------------------------->
-    <section class="bg_pink500 position-relative">
-      <div class="container py-5">
-        <div class="row justify-content-center justify-content-lg-between">
-          <div class="col-12 col-md-10 col-lg-6 col-xl-5">
-            <h2 class="ff_Cinzel fw-normal fs_lg text-white m-0">
-              Get In Touch
-            </h2>
-            <p class="ff_Poppins fw-normal fs_xsm text-white m-0 pt-1">
-              Our friendly team would love to hear from you!
-            </p>
-            <div class="form_bg mt-4">
-              <form>
-                <div
-                  class="d-flex flex-column flex-sm-row justify-content-between gap-4"
-                >
-                  <div>
-                    <h6
-                      class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07"
-                    >
-                      First name
-                    </h6>
-                    <input
-                      autocomplete="off"
-                      type="text"
-                      name="Fname"
-                      placeholder="First name"
-                    />
-                  </div>
-                  <div>
-                    <h6
-                      class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07"
-                    >
-                      Last name
-                    </h6>
-                    <input
-                      autocomplete="off"
-                      type="text"
-                      name="Lname"
-                      placeholder="Last name"
-                    />
-                  </div>
-                </div>
-                <div class="pt-4">
-                  <h6
-                    class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07"
-                  >
-                    Email
-                  </h6>
-                  <input
-                    autocomplete="off"
-                    type="email"
-                    name="Email"
-                    placeholder="You@gmail.com"
-                  />
-                </div>
-                <div class="pt-4">
-                  <h6
-                    class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07"
-                  >
-                    Phone number
-                  </h6>
-                  <input
-                    autocomplete="off"
-                    type="number"
-                    class="w-100"
-                    placeholder="+1(656) 000-0000"
-                    name="name"
-                  />
-                </div>
-                <div class="pt-4">
-                  <h6
-                    class="ff_Poppins fw-normal fs_xsm text-black mb-3 opacity_07"
-                  >
-                    Message
-                  </h6>
-                  <textarea class="w-100 textArea p-2" rows="6"></textarea>
-                </div>
-                <button
-                  type="submit"
-                  class="submit_btn arrow_btn ff_Poppins fw-normal fs_md text-white mt-4 mt-md-5"
-                >
-                  <span class="pe-2"
-                    ><img
-                      class="img_transition"
-                      src="./assets/img/svg/btn_arrow.svg"
-                      alt="btn_arrow"
-                  /></span>
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="col-12 col-md-10 col-lg-6">
-            <div class="phone_img">
-              <img
-                class="w-100"
-                src="./assets/img/png/phone_img.png"
-                alt="phone_img"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-----------------------------------------Footer------------------------------------>
-    <footer class="position-relative overflow-hidden">
-      <div class="container py-4">
-        <div class="row justify-content-center py-5">
-          <div class="col-7 col-md-8 col-lg-5 col-xl-4">
-            <img
-              class="w-100"
-              src="./assets/img/svg/beauty_logo.svg"
-              alt="beauty_logo"
-            />
-          </div>
-          <div class="col-10 mt-5">
-            <ul
-              class="ps-0 d-flex gap-3 gap-sm-4 gap-md-5 flex-column flex-sm-row align-items-center justify-content-center"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="ff_Cinzel fw-normal fs_xsm text-black d-inline-block footer_line position-relative d-inline-block"
-                  >HOme</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#Services"
-                  class="ff_Cinzel fw-normal fs_xsm text-black d-inline-block footer_line position-relative d-inline-block"
-                  >Services</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#Testimonials"
-                  class="ff_Cinzel fw-normal fs_xsm text-black d-inline-block footer_line position-relative d-inline-block"
-                  >Testimonials</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="ff_Cinzel fw-normal fs_xsm text-black d-inline-block footer_line position-relative d-inline-block"
-                  >Pricelist</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#Gallery"
-                  class="ff_Cinzel fw-normal fs_xsm text-black d-inline-block footer_line position-relative d-inline-block"
-                  >Gallery</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <span class="light_pink position-absolute bottom-0 w-100"></span>
-    </footer>
-    <button
-      class="position-fixed backtoTop bg_pink500"
-      id="back-to-up"
-      onClick="scrollToTop()"
-    >
-      <img
-        class="w-100"
-        src="./assets/img/webp/backtopTop.webp"
-        alt="backtopTop"
-      />
-      <!-- &uarr; -->
-    </button>
+    </div>
+    <span class="light_pink position-absolute bottom-0 w-100"></span>
+  </footer>
+  <button class="position-fixed backtoTop bg_pink500" id="back-to-up" onClick="scrollToTop()">
+    <img class="w-100" src="./assets/img/webp/backtopTop.webp" alt="backtopTop" />
+    <!-- &uarr; -->
+  </button>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <!-- j query min js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      $(document).ready(function () {
-        $(".slider").slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true,
-          dots: true,
-          fade: true,
-          autoplaySpeed: 3500,
-        });
-      });
-      $(document).ready(function () {
-        $(".slider_2").slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true,
-          fade: true,
-          autoplaySpeed: 3500,
-          prevArrow: $(".left_arrow_slider"),
-          nextArrow: $(".right_arrow_slider"),
-        });
-      });
-      $(".slider_3").slick({
-        slidesToShow: 4,
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+  </script>
+  <!-- j query min js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      $(".slider").slick({
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 800,
-        pauseOnHover: false,
-        responsive: [
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: false,
-            },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            },
-          },
-          {
-            breakpoint: 576,
-            settings: {
-              slidesToShow: 1,
-              centerMode: true,
-              centerPadding: "100px",
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 475,
-            settings: {
-              slidesToShow: 1,
-              centerMode: true,
-              centerPadding: "30px",
-              slidesToScroll: 1,
-            },
-          },
-        ],
+        dots: true,
+        fade: true,
+        autoplaySpeed: 3500,
       });
-      const Nav = document.getElementById("navBar");
-      const Nav_icon = document.getElementById("nav_button_icon");
-      const overflowHidden = document.getElementById("bodyTag");
-      function showNav() {
-        Nav.classList.add("show_nav");
-        overflowHidden.classList.add("overflow_y_hidden");
+    });
+    $(document).ready(function () {
+      $(".slider_2").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        fade: true,
+        autoplaySpeed: 3500,
+        prevArrow: $(".left_arrow_slider"),
+        nextArrow: $(".right_arrow_slider"),
+      });
+    });
+    $(".slider_3").slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 800,
+      pauseOnHover: false,
+      responsive: [{
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            centerMode: true,
+            centerPadding: "100px",
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 475,
+          settings: {
+            slidesToShow: 1,
+            centerMode: true,
+            centerPadding: "30px",
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+    const Nav = document.getElementById("navBar");
+    const Nav_icon = document.getElementById("nav_button_icon");
+    const overflowHidden = document.getElementById("bodyTag");
+
+    function showNav() {
+      Nav.classList.add("show_nav");
+      overflowHidden.classList.add("overflow_y_hidden");
+    }
+
+    function closeNav() {
+      Nav.classList.remove("show_nav");
+      overflowHidden.classList.remove("overflow_y_hidden");
+    }
+    window.onscroll = () => {
+      toggleTopButton();
+    };
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    function toggleTopButton() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        document.getElementById("back-to-up").classList.remove("d-none");
+      } else {
+        document.getElementById("back-to-up").classList.add("d-none");
       }
-      function closeNav() {
-        Nav.classList.remove("show_nav");
-        overflowHidden.classList.remove("overflow_y_hidden");
-      }
-      window.onscroll = () => {
-        toggleTopButton();
-      };
-      function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-      function toggleTopButton() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          document.getElementById("back-to-up").classList.remove("d-none");
-        } else {
-          document.getElementById("back-to-up").classList.add("d-none");
-        }
-      }
-      let preLoader = document.querySelector(".preloader");
-      let overflowhidden = document.querySelector("body");
-      setTimeout(() => {
-        preLoader.style.visibility = "hidden";
-        document.body.classList.remove("overflow-hidden");
-      }, 3000);
-    </script>
-  </body>
+    }
+    let preLoader = document.querySelector(".preloader");
+    let overflowhidden = document.querySelector("body");
+    setTimeout(() => {
+      preLoader.style.visibility = "hidden";
+      document.body.classList.remove("overflow-hidden");
+    }, 3000);
+  </script>
+</body>
+
 </html>
