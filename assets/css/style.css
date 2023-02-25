@@ -404,9 +404,13 @@ input::-webkit-inner-spin-button {
 .iti {
   width: 100%;
 }
-
+  
 .overflow_x_hidden {
   overflow-X: hidden;
+}
+
+.border_white {
+  border: 1.5px solid white !important;
 }
 
 @keyframes preloader_img {
