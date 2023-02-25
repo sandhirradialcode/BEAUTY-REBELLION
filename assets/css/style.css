@@ -10,11 +10,11 @@
 
 /*--font-family--*/
 .ff_Cinzel {
-  font-family: "Cinzel", serif;
+  font-family: "Cinzel";
 }
 
 .ff_Poppins {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
 }
 
 :root {
@@ -348,10 +348,10 @@ input::-webkit-inner-spin-button {
 .footer_line::before {
   content: "";
   background-color: #000000;
-  height: 3px;
+  height: 1.5px;
   width: 0px;
   left: 50%;
-  bottom: -15%;
+  bottom: -7%;
   border-radius: 15px;
   transition: all 200ms linear;
   position: absolute;
@@ -404,7 +404,7 @@ input::-webkit-inner-spin-button {
 .iti {
   width: 100%;
 }
-  
+
 .overflow_x_hidden {
   overflow-X: hidden;
 }
