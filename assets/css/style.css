@@ -412,6 +412,31 @@ input::-webkit-inner-spin-button {
   right: 2%;
 }
 
+.preloader {
+  background-color: var(--clr-pink400);
+  z-index: 5;
+}
+
+.preloaderImg {
+  width: 298.44px;
+  height: 193px;
+  animation: preloader_img 1.5s ease-in-out infinite alternate;
+}
+
+.overflow_hidden {
+  overflow: hidden;
+}
+
+@keyframes preloader_img {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 @keyframes backtoTopBTN {
   from {
     transform: translateY(15px);

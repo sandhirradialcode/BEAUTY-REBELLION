@@ -36,8 +36,15 @@
       type="image/x-icon"
     />
   </head>
-  <body class="overflow_x_hidden" id="bodyTag">
-    <header>
+  <body class="overflow_hidden" id="bodyTag">
+    <div
+      class="preloader d-flex position-fixed min-vh-100 align-items-center justify-content-center w-100"
+    >
+      <div class="preloaderImg">
+        <img class="w-100" src="./assets/img/png/beauty_logo.png" alt="" />
+      </div>
+    </div>
+    <header class="overflow_x_hidden">
       <nav class="bg_pink100 pb-2">
         <div class="text-center pb-4 pt-3">
           <div class="w-100">
@@ -912,6 +919,12 @@
           document.getElementById("back-to-up").classList.add("d-none");
         }
       }
+      let preLoader = document.querySelector(".preloader");
+      let overflowhidden = document.querySelector("body");
+      setTimeout(() => {
+        preLoader.style.visibility = "hidden";
+        overflowhidden.style.overflow = "unset";
+      }, 3000);
     </script>
   </body>
 </html>
