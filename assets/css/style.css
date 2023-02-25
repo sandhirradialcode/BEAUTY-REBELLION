@@ -93,13 +93,6 @@
 }
 
 /* hero */
-.max_height_700 {
-  max-height: 700px;
-}
-
-.w_67 {
-  width: 67%;
-}
 
 .slick-dots li button:before {
   color: white !important;
@@ -130,7 +123,7 @@
   background-size: 100% 100%;
 }
 
-.bg_white {
+.bg_cards {
   background: rgba(255, 255, 255, 0.82);
 }
 
@@ -176,10 +169,6 @@
   cursor: pointer;
 }
 
-.overflow_x_hidden {
-  overflow-x: hidden !important;
-}
-
 .cloneBtn {
   width: 50px;
   height: 50px;
@@ -220,7 +209,7 @@ nav ul li a:hover::after {
   transform: translateX(-50%);
 }
 
-.transform_translate_box {
+.transition_box {
   transition: 0.3s ease-in-out all;
 }
 
@@ -263,22 +252,18 @@ nav ul li a:hover::after {
   transform: scale(1.1);
 }
 
-.transform_scale {
-  transition: all 0.2s ease-in-out;
+.transform_scale_transition {
+  transition: all 0.3s ease-in-out;
 }
 
-.box_1 {
-  background: #f8f4f1;
-}
-
-.card_1 {
+.form_bg {
   background: #ffffff;
   box-shadow: 10px 10px 28px rgba(219, 219, 219, 0.15);
   border-radius: 4px;
   padding: 45px 35px 25px 35px;
 }
 
-.card_1 input {
+.form_bg input {
   font-family: "Poppins";
   font-weight: 400;
   font-size: var(--fs-xsm);
@@ -291,7 +276,7 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.card_1 input::placeholder {
+.form_bg input::placeholder {
   font-family: "Poppins" !important;
   font-weight: 400 !important;
   font-size: var(--fs-xsm);
@@ -341,7 +326,7 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.arrow_btn img {
+.img_transition {
   transition: all 0.2s ease-in-out;
 }
 
@@ -357,15 +342,7 @@ input::-webkit-inner-spin-button {
 
 .light_pink {
   background-color: #f0d9d4;
-  width: 100%;
   height: 42px;
-  position: absolute;
-  bottom: 0;
-}
-
-.footer_line {
-  position: relative;
-  display: inline;
 }
 
 .footer_line::before {
@@ -486,13 +463,18 @@ input::-webkit-inner-spin-button {
     height: 100%;
   }
 
-  .card_1 {
+  .form_bg {
     background: #ffffff;
     padding: 45px 24px 25px 24px;
   }
 
   .submit_btn {
     padding: 14px;
+  }
+
+  .preloaderImg {
+    width: 200px;
+    height: 153px;
   }
 }
 
