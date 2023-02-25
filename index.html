@@ -923,7 +923,7 @@
       let overflowhidden = document.querySelector("body");
       setTimeout(() => {
         preLoader.style.visibility = "hidden";
-        overflowhidden.style.overflow = "unset";
+        document.body.classList.remove("overflow-hidden");
       }, 3000);
     </script>
   </body>
