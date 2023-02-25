@@ -400,6 +400,11 @@ input::-webkit-inner-spin-button {
   animation: preloader_img 1.5s ease-in-out infinite alternate;
 }
 
+.intl-tel-input,
+.iti {
+  width: 100%;
+}
+
 @keyframes preloader_img {
   0% {
     transform: scale(1);
