@@ -347,7 +347,11 @@ nav ul li a:hover::after {
 }
 
 .img_transition {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.border_none {
+  border: none;
 }
 
 .bg_footerWave {
