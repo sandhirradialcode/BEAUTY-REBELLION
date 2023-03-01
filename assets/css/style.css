@@ -18,10 +18,13 @@
 }
 
 :root {
+  /* ---fw------ */
+  --fw-medium: 500;
   /*--font-size---*/
   --fs-xsm: 16px;
   --fs-sm: 18px;
   --fs-md: 20px;
+  --fs-base: 32px;
   --fs-lg: 40px;
   --fs-xl: 60px;
   /*---color-----*/
@@ -30,6 +33,11 @@
   --clr-pink300: #eed5d0;
   --clr-pink400: #dfb8b1;
   --clr-pink500: #e18d8a;
+}
+
+/* ---fw------ */
+.fw_medium {
+  font-weight: var(--fw);
 }
 
 /*--font-size---*/
@@ -43,6 +51,10 @@
 
 .fs_md {
   font-size: var(--fs-md);
+}
+
+.fs_base {
+  font-size: var(--fs-base);
 }
 
 .fs_lg {
@@ -295,6 +307,14 @@ nav ul li a:hover::after {
   opacity: 0.7 !important;
 }
 
+.footer_input {
+  border: none !important;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.7 !important;
+}
+
 .submit_btn {
   background: #e18d8a;
   box-shadow: 0px 4px 36px rgba(225, 141, 138, 0.12);
@@ -330,6 +350,17 @@ nav ul li a:hover::after {
   transition: all 0.2s ease-in-out;
 }
 
+.bg_footerWave {
+  background-image: url('../img/svg/footer_wave.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opacity_07 {
+  opacity: 0.7;
+}
+
 .arrow_btn:hover img {
   transform: translateX(10px);
 }
@@ -357,9 +388,18 @@ input::-webkit-inner-spin-button {
   position: absolute;
 }
 
+.w_logo_footer {
+  width: 115.97px;
+  height: 75px;
+}
+
 .footer_line:hover::before {
   transform: translateX(-50%);
   width: 100%;
+}
+
+.footer_input {
+  outline: none;
 }
 
 .quotese_img {
@@ -411,6 +451,17 @@ input::-webkit-inner-spin-button {
 
 .border_white {
   border: 1.5px solid white !important;
+}
+
+.w_footer_img {
+  width: 16px;
+  height: 20px;
+}
+
+.footer_lineBg {
+  height: 1px;
+  width: 100%;
+  background-color: #4C4C4C;
 }
 
 @keyframes preloader_img {
@@ -488,6 +539,10 @@ input::-webkit-inner-spin-button {
   .preloaderImg {
     width: 200px;
     height: 153px;
+  }
+
+  .iFrame {
+    height: 450px;
   }
 }
 
