@@ -380,6 +380,14 @@ input::-webkit-inner-spin-button {
   height: 42px;
 }
 
+.subscribe_btn:hover {
+  opacity: 0.8;
+}
+
+.translate_footer_img:hover {
+  transform: translateY(-5px);
+}
+
 .footer_line::before {
   content: "";
   background-color: #000000;
