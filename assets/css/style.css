@@ -110,21 +110,26 @@
 
 /* hero */
 
-.slick-dots li button:before {
+.slider .slick-dots li button:before {
   color: white !important;
   font-size: 15px !important;
 }
 
-.slick-dots {
+.slider .slick-dots {
   bottom: 10px !important;
 }
 
-.slick-dotted.slick-slider {
+#Home .slick-dotted.slick-slider {
   margin-bottom: 0px !important;
 }
 
 .z_index_2 {
   z-index: 2;
+}
+
+.slider_4 .slick-dots li button:before {
+  color: #e18d8a !important;
+  font-size: 15px !important;
 }
 
 .position_hero_title {
